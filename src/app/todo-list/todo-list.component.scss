@@ -1,0 +1,100 @@
+.todo-list-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 20px;
+    }
+  
+    .task-list {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 18px;
+        padding: 5px 0;
+        border-bottom: 1px solid #ddd;
+  
+        .task-details {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          font-family: 'Arial', sans-serif;
+  
+          .completed-task {
+            text-decoration: line-through;
+            color: #888;
+          }
+        }
+  
+        .actions {
+          display: flex;
+          align-items: center;
+  
+          button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+          }
+  
+          .delete-button {
+            background-color: #ff5555;
+            color: white;
+          }
+  
+          .status-select {
+            margin-left: 10px;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+          }
+  
+          .rename-button {
+            background-color: #007bff;
+            color: white;
+          }
+        }
+      }
+    }
+  
+    .add-task {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+  
+      input[type="text"] {
+        flex: 1;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: 'Arial', sans-serif;
+      }
+  
+      button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Arial', sans-serif;
+      }
+    }
+  }
+  
